@@ -1,0 +1,14 @@
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header__nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.site-header__nav-link {
+  text-decoration: none;
+}

@@ -1,0 +1,6 @@
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: grid;
+  min-height: 100vh;
+}

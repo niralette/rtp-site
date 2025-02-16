@@ -1,0 +1,43 @@
+---
+const title = 'Return To Paradise';
+
+const nav: {
+  title: string;
+  href: string;
+}[] = [
+  {
+    title: 'News',
+    href: '#',
+  },
+  {
+    title: 'About',
+    href: '#',
+  },
+  {
+    title: 'Downloads',
+    href: '#',
+  },
+];
+---
+
+<header class="site-header">
+  <div class="site-header__inner wrapper">
+    <h1 class="site-header__title">
+      {title}
+    </h1>
+
+    <nav class="site-header__nav">
+      <ul class="site-header__nav-list">
+        {
+          nav.map(item => (
+            <li class="site-header__nav-item">
+              <a href={item.href} class="site-header__nav-link">
+                {item.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
